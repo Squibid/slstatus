@@ -65,9 +65,13 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function      format     argument */
-      /*  { separator,     " | ",     NULL },
-        { run_command,   "mus: %s", "mpdstats"},
-      */  { separator,     " | ",     NULL },
+        /*
+        * { separator,     " | ",     NULL },
+        * { battery_state, "%s",      "BAT0" },
+        * { battery_perc,  "%s%%",    "BAT0" },
+        * { battery_remaining, " - %s", "BAT0" },
+        */
+        { separator,     " | ",     NULL },
         { cpu_perc,      "cpu: %s%%", NULL },
         { separator,     " | ",     NULL },
         { ram_perc,      "ram: %s%%", NULL },
